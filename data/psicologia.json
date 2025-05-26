@@ -1,0 +1,41 @@
+{
+  "tipos_de_psicologia": [
+    {
+      "nombre": "Psicología Clínica",
+      "descripcion": "Se ocupa de la evaluación, diagnóstico, tratamiento y prevención de los trastornos mentales y emocionales."
+    },
+    {
+      "nombre": "Psicología Cognitiva",
+      "descripcion": "Estudia los procesos mentales como el pensamiento, la memoria, el aprendizaje, la resolución de problemas y la percepción."
+    },
+    {
+      "nombre": "Psicología del Desarrollo",
+      "descripcion": "Analiza cómo las personas cambian y se desarrollan a lo largo de sus vidas, desde la infancia hasta la vejez."
+    },
+    {
+      "nombre": "Psicología Social",
+      "descripcion": "Examina cómo los pensamientos, sentimientos y comportamientos de las personas son influenciados por la presencia de otros y el entorno social."
+    },
+    {
+      "nombre": "Neuropsicología",
+      "descripcion": "Estudia la relación entre el cerebro y el comportamiento, investigando cómo las lesiones o afecciones cerebrales afectan las funciones cognitivas y emocionales."
+    },
+    {
+      "nombre": "Psicología Educativa",
+      "descripcion": "Se enfoca en el estudio de cómo aprenden las personas en entornos educativos y el desarrollo de métodos de enseñanza efectivos."
+    },
+    {
+      "nombre": "Psicología Organizacional/Industrial",
+      "descripcion": "Aplica principios psicológicos al lugar de trabajo para mejorar la productividad, la satisfacción laboral y la organización."
+    },
+    {
+      "nombre": "Psicología Forense",
+      "descripcion": "Aplica principios psicológicos al sistema legal y judicial, a menudo trabajando en casos criminales o civiles."
+    },
+    {
+      "nombre": "Psicología de la Salud",
+      "descripcion": "Estudia cómo los factores psicológicos, conductuales y culturales influyen en la salud física y la enfermedad."
+    }
+    
+  ]
+}

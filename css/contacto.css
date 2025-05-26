@@ -1,0 +1,329 @@
+/*FONTS*/
+
+@font-face {
+  font-family: BasiliaR;
+  src: url(../assets/fonts/BasiliaT-Regu.otf);
+
+}
+
+@font-face {
+  font-family: Chantelli_Antiqua;
+  src: url(../assets/fonts/Chantelli_Antiqua.ttf);
+}
+
+
+/*COLORS*/
+
+:root {
+  --pink: #f5a1ee;
+  --purple: #6E538A;
+  --off-white: #f1efe3;
+  --white: #FFFFFF;
+  --dark-grey: #383838;
+  --black: #000000;
+  --violeta: #8a2be2;
+  --light-grey: #b7b6b6;
+  --medium-grey: #5a5858;
+  --light-blue: rgba(90, 171, 224, 0.877);
+}
+
+
+/*RESET*/
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--off-white);
+}
+
+
+.contenedor-principal {
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'nav nav'
+    'main main'
+    'footer footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 90px 1fr auto;
+}
+
+
+
+/*HEADER*/
+header {
+  grid-area: header;
+  background-color: var(--purple);
+  position: fixed;
+  width: 100%;
+  font-size: 16px;
+  z-index: 3;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.email,
+.chat {
+  color: var(--pink);
+  text-decoration: none;
+
+}
+
+.contacto {
+  color: var(--white);
+  ;
+}
+
+/*NAV*/
+
+nav {
+  grid-area: nav;
+  background-color: var(--white);
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  margin-top: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100px;
+
+
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+nav ul li {
+
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 8px 16px;
+  list-style: none;
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--medium-grey);
+}
+
+a:hover {
+  color: var(--pink);
+  text-decoration: none;
+}
+
+
+.marcado {
+  background-color: var(--pink);
+  padding: 5px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px var(--light-grey);
+
+
+}
+
+
+
+/*MAIN*/
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+}
+
+
+.datos-empresa {
+  color: var(--dark-grey);
+
+}
+
+.cita {
+  color: var(--dark-grey);
+  font-size: 60px;
+}
+
+.subrayado {
+  width: 25%;
+  height: 5px;
+  background-color: var(--pink);
+  border-radius: 100%;
+}
+
+.text-reservar,
+.pasos {
+  color: var(--black);
+  font-size: 24px;
+  padding: 10px;
+  color: var(--dark-grey);
+}
+
+
+.reservar-cita {
+  padding: 40px;
+  margin: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+
+}
+
+.cita {
+  color: var(--dark-grey);
+}
+
+ol {
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 24px;
+  color: var(--dark-grey);
+}
+/*CONTENEDOR MAPA*/
+.contenedor-mapa {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#mapa {
+  border-radius: 20px;
+  width: 50%;
+  height: 100%;
+
+}
+
+#panel {
+  max-width: 480px;
+  height: 100%;
+  padding: 16px;
+  overflow: auto;
+  box-sizing: border-box;
+/*DIRECCION Y CONTACTO*/
+}
+.direccion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.encantados{
+  margin: 10px;
+  font-size: 24px;
+  color: var(--dark-grey);
+}
+.correo{
+  font-weight: 600;
+}
+
+/*FOOTER*/
+
+footer {
+  grid-area: footer;
+  background-color: var(--purple);
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+}
+
+.footer-text{
+  
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 12px;
+
+
+  
+
+}
+
+.footer-legal{
+  color:var(--white);
+  text-decoration: underline;
+  padding: 15px;
+ 
+ 
+  
+}
+.footer-empresa{
+  color: var(--white);
+  cursor: pointer;
+}
+
+.footer-legal,.footer-empresa :hover {
+      color:var(--pink);
+     
+    }
+    .aviso-legal{
+      color: var(--white);
+       margin-left: 100px;
+ 
+    }
+  .footer-direccion{
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+  }
+  
+
+/*MEDIA QUERIES*/
+
+
+@media(max-width:1024px){
+  .contenedor-mapa{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  .mapa{
+    width: 100%;
+  }
+  .contenedor-mapa{
+    width: 100%;
+    height: 100%;
+  }
+}

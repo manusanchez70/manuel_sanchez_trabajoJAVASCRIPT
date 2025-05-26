@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/presupuesto.css">
+    <title>Presupuesto</title>
+
+</head>
+
+<body>
+    <!--CONTENEDOR PRINCIPAL-->
+    <div class="contenedor-principal">
+        <!--HEADER-->
+        <header>
+
+            <a class="chat" href="https://api.whatsapp.com/send?phone=34635672786"><span
+                    class="contacto">Contacto:</span>
+                +34 635672786 | </a>
+            <a class="email" href="https://workspace.google.com/intl/es/gmail/"> estrellabeneroso@gmail.com </a>
+
+
+        </header>
+
+        <!--NAV-->
+        <nav>
+            <a href="./contacto.html"> <img src="../assets/images/LOGO.png" width="100" height="100" alt="un logo de una mariposa con las alas en color
+         rosa y purpura con el nombre de la we rodenadola."></a>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#"><mark class="marcado">Presupuesto</mark></a></li>
+                <li><a href="../views/galeria.html">Galeria</a></li>
+                <li><a href="../views/contacto.html">Pedir cita</a></li>
+            </ul>
+
+        </nav>
+
+        <main>
+            <!--DATOS PERSONALES-->
+            <h1 class="form-text">FORMULARIO DE PRESUPUESTO</h1>
+
+ <form id="formulario" name="formulario" class="form-container" action="procesar.php">
+
+                <!-- DATOS PERSONALES -->
+                <fieldset >
+                    <legend class="text-datos">Datos Personales</legend>
+
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required>
+                        <small>*Este campo es obligatorio.</small>
+                    </div>
+
+                    <div>
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Escriba sus apellidos">
+                        <small>*Este campo es obligatorio.</small>
+                    </div>
+
+                    <div>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Escriba su número de móvil">
+                        <small>*Este campo es obligatorio.</small>
+                    </div>
+
+                    <div>
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" placeholder="Escriba su edad">
+                        <small>*Este campo es obligatorio.</small>
+                    </div>
+
+                    <div>
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" placeholder="Escriba su correo electrónico">
+                        <small>*Este campo es obligatorio.</small>
+                    </div>
+
+                    <div>
+                        <label for="comentarios">Comentarios adicionales:</label>
+                        <textarea id="comentarios" class="text-adicional" name="comentarios" rows="6"></textarea>
+                        
+                    </div>
+                </fieldset>
+
+                <!-- PRESUPUESTO -->
+                <fieldset class="datos-presupuesto">
+    <legend >Presupuesto</legend>
+
+    <div>
+        <label for="tipo-terapia">Tipo de terapia:</label>
+        <select id="tipo-terapia" class="tipo-terapia" name="tipo-terapia" required>
+            <option value="">Selecciona una opción</option>
+            <option value="psicologica">Terapia psicológica</option>
+            <option value="online">Terapia online</option>
+            <option value="mayores">Terapia para personas mayores</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="sesiones">Cantidad de sesiones:</label>
+        <input type="number" id="sesiones" class="sesiones" name="sesiones" min="1" required>
+    </div>
+
+    <div>
+        <button class="calcular" id="calcular">Calcular</button>
+    </div>
+
+    <div>
+        <label for="resultado">Total presupuesto (€):</label>
+        <input type="text" id="resultado" name="resultado" readonly required>
+    </div>
+
+    <h2 class="aceptacion">Aceptación de Condiciones y envío de presupuesto.</h2>
+    <div class="text-aceptacion">
+        <input type="checkbox" class="check-privacidad" id="privacidad" name="privacidad" required>
+        <label for="privacidad" class="privacidad">
+            He leído la política de privacidad.
+            
+        </label>
+    </div>
+
+    <div>
+        <button type="submit" id="enviar" value="Enviar">Enviar</button>
+        <button type="reset" id="borrar" value="borrar">Borrar</button>
+    </div>
+
+    <p class="derechos">Todos los derechos reservados 2025</p>
+</fieldset>
+
+
+            </form>
+           
+        </main>
+        <!--FOOTER-->
+        <footer>
+
+            <div class="footer-text">
+                <div class="footer-empresa">
+                    <p>Psicología Estrella |<a href="./views/contacto.html" class="footer-direccion"> Calle Massenet 6,
+                            29011 Málaga,España</a> </p>
+                </div>
+
+                <div class="footer-legal">
+                    <a href="https://www.aepd.es/politica-de-privacidad-y-aviso-legal" class="aviso-legal" target="_blank">Aviso
+                        Legal</a>
+                </div>
+            </div>
+
+
+
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/?locale=es_ES" target="_blank"><img
+                        src="../assets/images/facebook.svg" alt="Facebook" width="30" height="30"></a>
+
+                <a href="https://es.linkedin.com/?mcid=6968657504633266178&src=go-pa&trk=sem-ga_campid.18146679037_asid.140850334975_crid.694860685343_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.9216502&cid=&gad_source=1&gad_campaignid=18146679037&gbraid=0AAAAAojDCNTjXFDWOkwhlakJ9Bjc2Jz-f&gclid=CjwKCAjwuIbBBhBvEiwAsNypvdPIJpZUo9GDbScF1e9tcdix1T1LxWEOzpyJX5btAWCPThKhwJfAURoC96UQAvD_BwE&gclsrc=aw.ds"
+                    target="_blank"><img src="../assets/images/linkedin.svg" alt="linkedin" width="30" height="30"></a>
+
+                <a href="https://www.instagram.com/estrella_psicologia/" target="_blank"><img
+                        src="../assets/images/instagram.svg" alt="instagram" width="30" height="30"></a>
+
+                <a href="https://x.com/?lang=es" target="_blank"><img src="../assets/images/twitter.svg"
+                        alt="X antiguo twitter" width="30" height="30"></a>
+            </div>
+
+
+        </footer>
+        <script src="../Js/presupuesto.js"></script>
+    </div>
+</body>
+
+</html>
